@@ -1,4 +1,4 @@
-from PIL import Image.
+from PIL import Image;
 
 img = Image. open("image.jpg")
 
