@@ -12,6 +12,31 @@ A UX Designer is focused on all aspects of a product's development, including de
 
 Their work touches the entire end-to-end journey of a user's interaction with a product, and includes identifying new opportunities for the product and business.
 
+Here is are UX designer’s typical tasks and responsibilities. 
+
+### Strategy and content:
+
+* Competitor analysis
+* Customer analysis and user research
+* Product structure and strategy
+* Content development
+
+### Wireframing and prototyping:
+
+* Wireframing
+* Prototyping
+* Testing and iteration
+* Development planning
+
+
+### Execution and analytics
+
+* Coordination with UI designer(s)
+* Coordination with developer(s)
+* Tracking goals and Integration
+* Analysis and iteration
+
+
 ## 3.	How is UX design different to other design fields?
 
 UX design is focused on anything that affects the user's journey to solve that problem, positive or negative, both on-screen and off. 
