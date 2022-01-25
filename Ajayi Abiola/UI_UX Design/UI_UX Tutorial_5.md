@@ -1,6 +1,6 @@
 # PORTFOLIO 1
 
-#### I am currently reviewing the Portfolio of Tori which I got from Bestfolios. 
+### I am currently reviewing the Portfolio of Tori which I got from Bestfolios. 
 
 The link to the portfolio is provided here https://torisgarro.github.io/index.html
 
