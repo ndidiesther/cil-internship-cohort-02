@@ -12,7 +12,7 @@ Firstly, I have forgotten her name, so I will refer back to the landing page for
 
 Secondly, there are no information about her skills and her qualifications which I think is the essence of the about page. 
 
-In addition, there is no indication that she wants to connect with potential partners in both the landing page and the about page.
+In conclusion, there is no indication that she wants to connect with potential partners in both the landing page and the about page.
 
 To the case study of SUBSCRIBER NEWSTELLERS
 
@@ -24,3 +24,19 @@ However, there is no mention of tools and technique used during this project. Al
 
 There is a mention of the outcome of the project and how it helped the business was explained.
 
+
+# PORTFOLIO 2
+
+### Now, I am reviewing the Portfolio of Rahul Jain also from Bestfolios. 
+
+The link to the portfolio is provided here https://rahuljain.co/index.html
+
+On the landing page, there is a calm and welcoming feel to the page. Introduction was concise. In addition, there is clear call to action on the landing page which says ‘My Story’. 
+
+Clicking on the ‘my story’ link, we got to the About page. The page is detailed enough and I feel like I know Jain enough from the information in this page.
+
+The page reminded me his name and it also emphasizes what he does, what drives him and what is important to him.
+
+Furthermore, his education, work experience and award and recognition were listed on the page. However, I would have loved to see more about his skills which are related to his job. There is contact information on the page which shows willingness for collaboration.
+
+On the downside, he doesn’t have any case study to show which might be frowned upon by potential partners.
