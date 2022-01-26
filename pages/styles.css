@@ -5,6 +5,10 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
 .nav{
     display: flex;
     flex-direction: row;
@@ -89,7 +93,7 @@
   }
 
   .body{
-      margin: auto 50px;
+      margin: auto 0px;
   }
 
   .row{
@@ -117,7 +121,7 @@
   .row-title{
       font-size: 28px;
       line-height: 1.5;
-      margin-top: 30px;
+      margin-top: 5px;
       font-weight: bold;
   }
 
@@ -134,3 +138,109 @@
       text-decoration: underline !important;
       font-size: 16px;
   }
+
+  .flex{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 30px;
+      padding:30px;
+  }
+
+  .column{
+      flex-direction: column;
+  }
+
+  .large{
+      font-size: 30px;
+      font-weight: 400;
+      letter-spacing: 2px;
+  }
+
+  .text-group{
+      padding: 10px;
+  }
+  
+  .bold{
+      font-size: 38px;
+      font-weight: 900;
+  }
+
+  .text-group-row{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      /*border: 1px solid black;*/
+      justify-content: space-around;
+      padding: 10px;
+  }
+
+  .text-group-col{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .reverse{
+      flex-direction: row-reverse;
+  }
+
+  .list{
+      list-style: none;
+     
+  }
+
+  .list li{
+      margin-top: 10px;
+      font-size: 18px;
+  }
+
+  .left{
+      align-items: flex-start;
+  }
+
+  footer{
+      background-color: #2f2544;
+      height: 80vh;
+      margin-top: 4rem;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .cta{
+      border: none;
+      background-color: #fff;
+      padding: 15px 25px;
+      border-radius: 30px;
+      margin: 20px;
+  }
+
+  .stack{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .stack ul{
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      margin-left: 0px;
+  }
+
+  .stack ul li{
+      margin-top: 15px;
+      margin-left: 0px;
+      font-size: 14px;
+  }
+
+  .links{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      /*border: 1px solid white;*/
+      justify-self: flex-end;
+      position: relative;
+      bottom: 0px;
+      color: #fff;
+    }
