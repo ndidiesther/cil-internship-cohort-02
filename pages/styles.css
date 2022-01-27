@@ -314,3 +314,86 @@ body{
         margin: 15px;
         border-radius: 5px;
     }
+
+    .border{
+        border: 1px solid rgb(210, 218, 226)
+    }
+    .icon-color{
+        color: #c0a01f;
+    }
+
+    .contact{
+        display: flex;
+        flex-direction: column;
+        background-color: #f4f8fc;
+        align-items: center;
+        padding: 2rem;
+        font-size: 2rem;
+    }
+
+    .contact-row{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        /*border: 1px solid black;*/
+        padding: 10px;
+        
+    }
+
+    .center{
+        display: flex;
+        justify-content: center;
+    }
+
+    .input-wrapper{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        border: none;
+        width: 100%;
+        margin: 10px;
+        background-color: #fff;
+    }
+
+    .input-wrapper input {
+        width: 100%;
+        padding: 15px;
+        background-color: transparent;
+        border: none;
+        font-size: 18px;
+    }
+
+    .input-wrapper input:focus{
+        outline: none;
+    }
+
+    .input-wrapper textarea{
+        width: 100%;
+        height: 300px;
+        padding: 15px;
+        background-color: transparent;
+        border: none;
+        font-size: 18px;
+    }
+
+    .input-wrapper textarea:focus{
+        outline: none;
+    }
+
+    li a{
+        text-decoration: none;
+        color:#a6adb9;
+        transition: all 0.5s;
+    }
+
+    li a:hover{
+        color: black;
+    }
