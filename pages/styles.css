@@ -32,7 +32,6 @@ body{
 
 .container{
     display: flex;
-    margin: auto 50px;
     justify-content: space-between;
     /*border: 1px solid #3a1e1e;*/
     width: 100%;
@@ -265,4 +264,53 @@ body{
         font-size: 28px;
         flex-direction: column ;
       }
+
+    .smaller-text{
+          font-size: 1px;
+      }
+
+    .services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        background-color: #f4f8fc;
+        margin-top: 3rem;
+        width: 100vw;
+    }
     
+    .thumbs{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .thumb{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 300px;
+        background-color: #fff;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .thumb p{
+        font-weight: bold;
+    }
+
+    .thumb i{
+        background-color: #f4f8fc;
+        padding: 15px;
+        border-radius: 50%;
+    }
+
+    .services-btn{
+        background-color: #448cf0;
+        color:#fff;
+        padding: 15px 25px;
+        border: none;
+        margin: 15px;
+        border-radius: 5px;
+    }
