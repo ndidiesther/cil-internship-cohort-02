@@ -70,8 +70,7 @@ section.hero-cta{
     color: white;
     img{
         width: 100%;
-        filter: blur(2px);
-        -webkit-filter: blur(2px);
+        filter: brightness(0.4);
         background-color: var(--primary-color);
         object-fit: cover;
         max-height: 100%;

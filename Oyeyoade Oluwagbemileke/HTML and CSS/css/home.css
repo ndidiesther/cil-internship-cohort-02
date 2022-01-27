@@ -76,8 +76,8 @@ section.hero-cta {
 
 section.hero-cta img {
   width: 100%;
-  filter: blur(2px);
-  -webkit-filter: blur(2px);
+  -webkit-filter: brightness(0.4);
+          filter: brightness(0.4);
   background-color: var(--primary-color);
   -o-object-fit: cover;
      object-fit: cover;

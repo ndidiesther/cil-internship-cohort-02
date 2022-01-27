@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAA;EAEA,KAAK,EAAE,IAAI;CAQd;;AAVD,AAGI,IAHA,CAGA,EAAE,CAAA;EACE,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,MAAM;CACrB;;AANL,AAOI,IAPA,CAOA,EAAE,CAAA;EACE,UAAU,EAAE,IAAI;CACnB",
+    "sources": [
+        "fetch.scss"
+    ],
+    "names": [],
+    "file": "fetch.css"
+}
