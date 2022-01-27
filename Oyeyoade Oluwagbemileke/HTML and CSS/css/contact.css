@@ -120,8 +120,8 @@ section.hot-links img {
   padding: 20px;
   border: 6px solid white;
   border-style: outset;
-  border-radius: 50%;
-  background: #C0A01F;
+  border-radius: 30%;
+  background: whitesmoke;
   max-height: 100%;
   width: 5%;
   -o-object-fit: scale-down;
@@ -296,20 +296,18 @@ section.message-cta .message-form input[type='submit'] {
 
 .footer .floating-chat {
   float: right;
-  margin-bottom: 20px, 20px;
-  width: 4%;
+  padding: 10px;
+  width: 2%;
   z-index: 999;
-  bottom: 20px;
-  right: 20px;
+  bottom: 10%;
+  right: 2%;
+  border: 0.1px solid white;
+  border-radius: 50%;
+  background: var(--secondary-color);
   position: fixed;
 }
 
 .footer .floating-chat img {
   width: 100%;
-  border: 5px solid none;
-  border-radius: 50%;
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
-  max-height: 100%;
 }
 /*# sourceMappingURL=contact.css.map */

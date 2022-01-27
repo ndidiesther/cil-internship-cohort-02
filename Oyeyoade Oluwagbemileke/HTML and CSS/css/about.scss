@@ -1,55 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
-:root{
+:root {
     --primary-color: #2F2544;
     --secondary-color: #448CF0;
 }
 
-body{
+body {
     font-family: 'Dongle';
     margin: 0;
     padding: 0;
     // overflow-x: hidden;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
-.nav-bar{
-    background: white;    
+
+.nav-bar {
+    background: white;
     overflow: hidden;
     position: fixed;
     z-index: 999;
     width: 100%;
     height: 60px;
-    
-    a{
+
+    a {
         text-decoration: none;
     }
 
-    nav{
-        padding-right: 5%;    
+    nav {
+        padding-right: 5%;
         padding-left: 5%;
-        background: white;    
+        background: white;
         display: flex;
         place-content: space-between;
-        img{
+
+        img {
             place-content: flex-start;
         }
-        
-        ul.pri-nav-links{
+
+        ul.pri-nav-links {
             display: flex;
             place-content: center;
-            a{  
+
+            a {
                 margin-left: 2.5em;
                 place-content: center;
                 color: gray;
             }
         }
-    
-        ul.sec-nav-link{
+
+        ul.sec-nav-link {
             place-content: flex-end;
-            a{
+
+            a {
                 color: white;
                 padding: .6em 1.0em;
                 font-size: 0.8em;
@@ -61,21 +65,22 @@ ul{
             }
         }
     }
-    
+
 }
 
-section.hero-cta{
+section.hero-cta {
     width: 100%;
     height: 480px;
 
-    img{
+    img {
         width: 100%;
         max-height: 100%;
         // filter: blur(1px);
         object-fit: cover;
         filter: brightness(0.4);
     }
-    .hero-texts{
+
+    .hero-texts {
         position: absolute;
         top: 45%;
         left: 50%;
@@ -85,40 +90,46 @@ section.hero-cta{
         color: white;
         font-weight: bold;
         font-size: 2.5em;
-        .small-hero-nav{
+
+        .small-hero-nav {
             font-weight: normal;
             font-size: 0.4em;
-            #small{
+
+            #small {
                 font-size: 0.6em;
             }
         }
     }
 }
 
-section.focus{
+section.focus {
     display: flex;
     height: 500px;
     width: 90%;
     margin: 5% 5% 5% 5%;
 
-    img{
+    img {
         width: 45%;
         max-height: 100%;
         object-fit: cover;
     }
-    .focus-block{
+
+    .focus-block {
         margin-left: 5%;
         margin-right: 5%;
         text-align: left;
-        h2{
+
+        h2 {
             color: var(--primary-color);
             font-weight: bold;
             font-size: 2.2em;
         }
-        h3{
+
+        h3 {
             color: var(--primary-color);
         }
-        p{
+
+        p {
             line-height: 1.3;
             color: var(--primary-color);
             text-align: left;
@@ -127,54 +138,56 @@ section.focus{
     }
 }
 
-section.services{
+section.services {
     height: 600px;
     width: 100%;
     background: whitesmoke;
     color: var(--primary-color);
-    
-    .services-banner{
+
+    .services-banner {
         text-align: center;
         height: 50px;
         padding-top: 2%;
         padding-bottom: 8%;
-        h2{
+
+        h2 {
             font-weight: bold;
             font-size: 2.5em;
-            span{
+
+            span {
                 color: var(--secondary-color);
             }
         }
-        h3{
+
+        h3 {
             font-size: 0.8em;
         }
     }
 
-    .services-options{
+    .services-options {
         display: flex;
         width: 100%;
         height: 250px;
         text-align: center;
         margin-bottom: 5%;
-        h4{
-            position: relative;
-            top: 20%;
+
+
+        h4 {
             color: var(--primary-color);
             font-size: 1.2em;
         }
 
         img{
+            padding: 30px;
+            border-radius: 30%;
+            background: whitesmoke;            
+            margin-top: 20%;                
             max-height: 100%;
             width: 10%;
-            position: relative;
-            top: 20%;
-            padding: 10%;
-            border: 1px solid none;
-            border-radius: 40%;
-            background: whitesmoke;
-            object-fit: fill;
-
+            object-fit: contain;
         }
+
+
         .HR{
             display: block;
             margin-left: 15%;
@@ -193,14 +206,23 @@ section.services{
             margin-right: 15%;
             width: 100%;
             background: white;
+
         }
+        .container{
+            padding: 20px;
+            // border: 1px solid green;
+            // border-radius: 50%;
+            background-color: #448CF0;
+            // background: whitesmoke;            
+        }
+
     }
 
-    .services-cta{
+    .services-cta {
         width: 100%;
         text-align: center;
 
-        span{
+        span {
             color: white;
             padding: 1%;
             background: var(--secondary-color);
@@ -211,24 +233,24 @@ section.services{
     }
 }
 
-.footer{
+.footer {
     background: var(--primary-color);
     color: white;
     height: 540px;
 
-    .footer-banner{
+    .footer-banner {
         padding-top: 20px;
         text-align: center;
         display: block;
         margin-bottom: 100px;
-        
-        .footer-mantra{
+
+        .footer-mantra {
             font-size: 2.5em;
             font-weight: bold;
             margin-bottom: 40px;
         }
 
-        .footer-cta{
+        .footer-cta {
             text-decoration: none;
             padding: 10px;
             background: white;
@@ -239,7 +261,7 @@ section.services{
         }
     }
 
-    .footer-info{
+    .footer-info {
         display: flex;
         // height: 400px;
         width: 90%;
@@ -247,40 +269,38 @@ section.services{
         place-content: space-between;
         line-height: 200%;
 
-        .current{
+        .current {
             font-weight: bold;
             font-size: 1.2em;
         }
 
         // .footer-right-col{
-             
+
         // }
     }
 
-    a{
+    a {
         color: white;
     }
 
-    a{
+    a {
         text-decoration: none;
     }
-    
-    .floating-chat{
+
+    .floating-chat {
         float: right;
-        // padding: 20px;
-        width: 3%;
+        padding: 10px;
+        width: 2%;
         z-index: 999;
         bottom: 10%;
-        right: 5%;
+        right: 2%;
+        border: 0.1px solid white;
+        border-radius: 50%;
+        background: var(--secondary-color);
         position: fixed;
-        transform: rotate(-90deg);
-        span{
-            text-decoration: none;
-            border-radius: 50%;
-            color: white;
-            font-weight: bold;
-            padding: 20px;
-            background: var(--secondary-color);   
+
+        img {
+            width: 100%;
         }
     }
 }

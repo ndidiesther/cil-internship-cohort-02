@@ -91,6 +91,7 @@ section.overview{
     height: 480px;
     display: flex;
     .left-col{
+        margin-right: 5%;
         display: block;
         width: 100%;
         h2{
@@ -99,18 +100,18 @@ section.overview{
             color: var(--primary-color);
         }
         p{
+            line-height: 150%;
             font-size: 1.2em;
         }
     }
     .right-col{
-        margin-left: 5%;
         width: 100%;
         img{
             width: 80%;
             max-height: 100%;
             object-fit: contain;
-            border: 2px solid var(--primary-color);
-            border-radius: 5%;
+            // border: 2px solid var(--primary-color);
+            // border-radius: 5%;
         }
     }
 }
@@ -143,25 +144,40 @@ section.vacancies{
     margin: 0 5% 5% 5%;
 
     .left-col{
-        width: 50%;
+        // width: 50%;
         img{
             margin-right: 5%;
             max-height: 100%;
-            object-fit: cover;
+            object-fit: contain;
         }
     }
 
     .right-col{
         margin-left: 5%;
+        line-height: 150%;
+
         h2{
+            margin-top: 0;
             font-weight: bold;
             color: var(--primary-color);
             font-size: 2.0em;
         }
-        .list{
+        .list, li{
             margin: 0;
+            line-height: 180%;
             padding: 0;
-            line-height: 120%;
+            position: relative;
+
+            &:before{
+                content: '';
+                left: -2em;
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                margin-right: .5em;
+                background-image: url("../images/bullet.svg");
+                background-size: contain;
+            }
         }
         p{
             display: block;
@@ -190,7 +206,9 @@ section.pEv{
     .right-col{
         margin-left: 5%;
         h2{
+            margin-top: 0;
             font-weight: bold;
+            color: var(--primary-color);
             font-size: 2.0em;
         }
         line-height: 200%;
@@ -252,18 +270,24 @@ section.pEv{
     
     .floating-chat{
         float: right;
-        margin-bottom: 20px, 20px;
-        width: 4%;
+        padding: 10px;
+        width: 2%;
         z-index: 999;
-        bottom: 20px;
-        right: 20px;
+        bottom: 10%;
+        right: 2%;
+        transform: rotate(-90deg);
+        border-radius: 50%;
         position: fixed;
         img{
+            background-color: green;
+            background: var(--secondary-color);   
+    
             width: 100%;
-            border: 5px solid none;
-            border-radius: 50%;
-            object-fit: contain;
-            max-height: 100%;
+        }
+        
+        &:hover{
+            border: 0.01em groove white;
+            width: 5%;   
         }
     }
 }

@@ -104,6 +104,7 @@ section.overview {
 }
 
 section.overview .left-col {
+  margin-right: 5%;
   display: block;
   width: 100%;
 }
@@ -115,11 +116,11 @@ section.overview .left-col h2 {
 }
 
 section.overview .left-col p {
+  line-height: 150%;
   font-size: 1.2em;
 }
 
 section.overview .right-col {
-  margin-left: 5%;
   width: 100%;
 }
 
@@ -128,8 +129,6 @@ section.overview .right-col img {
   max-height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  border: 2px solid var(--primary-color);
-  border-radius: 5%;
 }
 
 section.growth {
@@ -165,31 +164,41 @@ section.vacancies {
   margin: 0 5% 5% 5%;
 }
 
-section.vacancies .left-col {
-  width: 50%;
-}
-
 section.vacancies .left-col img {
   margin-right: 5%;
   max-height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 section.vacancies .right-col {
   margin-left: 5%;
+  line-height: 150%;
 }
 
 section.vacancies .right-col h2 {
+  margin-top: 0;
   font-weight: bold;
   color: var(--primary-color);
   font-size: 2.0em;
 }
 
-section.vacancies .right-col .list {
+section.vacancies .right-col .list, section.vacancies .right-col li {
   margin: 0;
+  line-height: 180%;
   padding: 0;
-  line-height: 120%;
+  position: relative;
+}
+
+section.vacancies .right-col .list:before, section.vacancies .right-col li:before {
+  content: '';
+  left: -2em;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-right: .5em;
+  background-image: url("../images/bullet.svg");
+  background-size: contain;
 }
 
 section.vacancies .right-col p {
@@ -227,7 +236,9 @@ section.pEv .right-col {
 }
 
 section.pEv .right-col h2 {
+  margin-top: 0;
   font-weight: bold;
+  color: var(--primary-color);
   font-size: 2.0em;
 }
 
@@ -285,20 +296,25 @@ section.pEv .right-col h2 {
 
 .footer .floating-chat {
   float: right;
-  margin-bottom: 20px, 20px;
-  width: 4%;
+  padding: 10px;
+  width: 2%;
   z-index: 999;
-  bottom: 20px;
-  right: 20px;
+  bottom: 10%;
+  right: 2%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  border-radius: 50%;
   position: fixed;
 }
 
 .footer .floating-chat img {
+  background-color: green;
+  background: var(--secondary-color);
   width: 100%;
-  border: 5px solid none;
-  border-radius: 50%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  max-height: 100%;
+}
+
+.footer .floating-chat:hover {
+  border: 0.01em groove white;
+  width: 5%;
 }
 /*# sourceMappingURL=home.css.map */
