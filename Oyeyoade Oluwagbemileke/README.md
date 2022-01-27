@@ -1,8 +1,4 @@
+
 # OYEYOADE OLUWAGBEMILEKE FEMI
+
 ## ID: 022
-
-*
-*
-*
-*
-
