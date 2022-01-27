@@ -267,22 +267,20 @@ section.services{
     
     .floating-chat{
         float: right;
-        margin-bottom: 20px, 20px;
+        // padding: 20px;
         width: 3%;
-        transform: rotate(-180deg);
         z-index: 999;
         bottom: 10%;
         right: 5%;
         position: fixed;
+        transform: rotate(-90deg);
         span{
             text-decoration: none;
-            // border: 2px solid white;
             border-radius: 50%;
             color: white;
             font-weight: bold;
-            padding: 50%;
-            background: var(--secondary-color);
-            
+            padding: 20px;
+            background: var(--secondary-color);   
         }
     }
 }
