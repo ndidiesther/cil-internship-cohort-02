@@ -1,14 +1,26 @@
-# osi-model answers
-Just like the OSI model, the TCP/IP (Transfer Control Protocol/Internet Protocol) model is layered and is used in the same fashion as the OSI model but with fewer layers. As the modern Internet and most communications use the Internet Protocol (IP), the TCP/IP model is technically more in line with modern network implementations. The TCP/IP model are considered less rigid than that of the OSI model, which basically means that many protocols implemented can be considered in grey areas between one area and another. The layered of the TCP/IP are explained below 
+# Software development process task
+# questions
+-  From the Agile Manifesto, complete the following: 
+ Individuals and interactions over ...... 
+ - Working software over ......
+  - Customer collaboration over ...... 
+  - Responding to change over ......
+  # Answer to question 1
+  Scrum is a framework for developing, delivering and sustaining product in a complex environment. The framework challenges the assumption of the tradition, sequential approach to product development and enables teams to self-organized. It is widely used as subset of agile software development
+Some of its benefit in software development are listed below;
 
-# The application
-The application is the highest layer in the TCP/IP and is used to handle all process-to-process communication functions; these functions were carried out by multiple different layers when referencing the OSI model. There are a number of different functions which are carried out by this layer, including session establishment, maintenance and termination, character code translations, data conversion, compression and encryption, remote access, network management and electronic messaging to name a few.
+-	Better productivity and faster delivery
+- Reviewing each sprint before the team moves on to the next sprint spreads testing throughout development.
+- Flexibility and adaptability
+- Higher ROI (Return on Investment) and faster time
+- Preventing projects failure; risk assessment and mitigation
 
-# The Transport Layer
-The Transport layer is the next layer and is typically related directly with the same named layer in the OSI model. Functions include message segmentation, acknowledgement, traffic control, session multiplexing, error detection and correction (resends), and message reordering. Common protocols include the Transport Control Protocol (TCP) and User Datagram Protocol (UDP)
+# Answer to question 2
+From the Agile Manifesto, complete the following: 
+- Individuals and interactions over processes and tools 
+- Working software over comprehensive documentation
+- Customer collaboration over contract negation 
+- Responding to change over following a plan
 
-# The Internet Layer
-The Internet layer is the next layer up from the link layer and is associated with the network layer of the OSI model. Functions include traffic routing, traffic control, fragmentation, and logical addressing. Common protocols include IP, ICMP and IGMP.
 
-# The Link Layer
-The link layer is the lowest layer of the TCP/IP model, the link layer combines the physical and data link layer functions into a single layer. This includes frame physical network functions like modulation, line coding and bit synchronization, frame synchronization and error detection.
+
