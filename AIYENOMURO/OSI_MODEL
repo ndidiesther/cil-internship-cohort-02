@@ -1,0 +1,32 @@
+
+OSI Model
+Describe any layered process you are familiar with similar to the OSI model
+
+The TCP/IP suite of protocols can be understood in terms of layers (or levels). 
+This figure depicts the layers of the TCP/IP protocol. 
+From the top they are,
+Link layer 
+Internet layer 
+Transport layer 
+Application layer
+TCP/IP carefully defines how information moves from sender to receiver.
+
+
+1. The link layer is the most basic, or lowest-level, classification of communication protocol. 
+It deals with sending information between hosts on the same local network, and translating data from the higher layers to the physical layer.
+
+2. Internet layer protocols
+Protocols in the Internet layer describe how data is sent and received over the Internet. 
+The process involves packaging data into packets, addressing and transmitting packets, and receiving incoming packets of data.
+
+
+3. Transport layer protocols
+It’s a connection-oriented transport layer protocol that prioritizes reliability over latency, or time. 
+TCP describes transferring data in the same order as it was sent, retransmitting lost packets, and controls affecting the rate of data transmission.
+
+
+
+4. The application layer describes the protocols that software applications interact with most often. 
+The specification includes descriptions of the remote login protocol Telnet, the File Transfer Protocol (FTP), and the Simple Mail Transfer Protocol (SMTP).
+
+Also included in the application layer are the Hypertext Transfer Protocol (HTTP) and its successor, Hypertext Transfer Protocol Secure (HTTPS).
