@@ -1,0 +1,611 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 8rem;
+    background-color: white;
+}
+
+.navbar .logo {
+    font-size: 14;
+    font-weight: bold;
+    
+}
+
+
+
+nav ul li {
+    display: inline-block;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.max-rider {
+    width: 138px;
+    height: 37px;
+    border: none;
+    outline: none;
+    background-color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+
+.hero-page1 {
+    height: 50vh;
+    background-image: url(./Images/SvWWN.png);
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.rider-image h1 {
+    text-align: center;
+    padding-top: 5rem;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.home2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    
+}
+
+.max-mobility h1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: black;
+
+}
+
+.max-mobility p {
+    line-height: 30px;
+}
+
+.max-mobility .second {
+    padding-top: 15px;
+}
+
+.max-mobility a {
+    color: black;
+}
+
+.mobility-image img {
+    width: 400px;
+    height: 400px;
+}
+
+/* Styling home3 */
+
+#home3 .home3-body {
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+#home3 .home{
+    text-align: center;
+    padding: 15px 0px;
+}
+
+#home3 .home3-image img {
+    width: 400px;
+    height: 400px;
+    padding-right: 3rem;
+}
+
+#home3 .home3-description {
+    padding-left: 2rem;
+}
+
+#home3 .home3-description .container1 {
+    margin-block: 15px;
+    
+}
+
+.home3-description p {
+    padding-top: 2rem;
+}
+
+
+/* Styling hom24 page1 */
+
+section#home4 {
+    margin-top: 15px;
+}
+
+#home4 .home4-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#home4 .home4page {
+    text-align: center;
+}
+
+#home4 .home4-image img {
+    width: 380px;
+    height: 390px;
+    margin-right: 4.5rem;
+    
+}
+
+#home4 .home4-body {
+    padding-top: 4rem;
+}
+
+#home4 .home4-body p {
+    padding: 8px 0px 0px 0px;
+    line-height: 27px;
+}
+
+#home4 .home4-body .our-ev {
+    padding-top: 10px;
+}
+
+#home4 .home4-body .link {
+    margin-top: 20px;
+    color: black;
+}
+
+/* Styling home5 section */
+section#home5 {
+    background-color: rgb(53, 6, 53);
+}
+#home5 h1 {
+    text-align: center;
+}
+
+#home5 .world {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#home5 .world h1 {
+     font-size: 40px;
+     font-weight: bold;
+     color: white;
+     padding-bottom: 15px;
+}
+
+#home5 .world .max-button {
+    width: 238px;
+    height: 37px;
+    border: none;
+    outline: none;
+    background-color:white;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+
+/* styling footer of home5 */
+#home5 .footer-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+}
+
+#home5 .footer-container h2 {
+    color: white;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#home5 .footer-container ul li {
+    list-style: none;
+    line-height: 180%;
+}
+
+#home5 .footer-container ul li a {
+    text-decoration: none;
+    color: white;
+    opacity: .7;
+}
+
+.footer-icons .footer-links1 li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.address p {
+    color: white;
+    padding-top: 10px;
+}
+
+
+/* Styling about1 section */
+#aboutnav {
+ margin-top: 2rem;
+}
+
+
+section#about1 {
+    background-image: url(./Images/about1-image.jpg);
+    height: 50vh;
+}
+
+#about1 .about {
+    text-align: center;
+    padding: 15px 0px;
+}
+
+#about1 .about-page {
+    text-align: center;
+    color: white;
+}
+
+.about-page h1 {
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+
+/* Styling the about2 section */
+#about2 .about2-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.about2-image img {
+    width: 400px;
+    height: 400px;
+    padding-right: 4rem;
+}
+
+.about2-body {
+    padding-top: 17px;
+    padding-left: 2rem;
+}
+
+.about2-body h3 {
+    padding-bottom: 15px;
+}
+
+.about2-body h1 {
+    padding-bottom: 15px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.about2-body p {
+    line-height: 26px;
+    opacity: .7px;
+}
+
+.about2-body .global {
+    padding-bottom: 15px;
+}
+
+#about3 {
+    background-color: gainsboro;
+    height: 55vh;
+}
+.about3-heading h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#about3 .about3-heading {
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.card-container .card1 {
+    background-color:white;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.card-container .card1 svg {
+    padding-top: 3rem;
+    padding-left: 8rem;
+}
+
+.card-container .card1 h1 {
+    font-size: 18px;
+    padding: 35px 35px;
+
+}
+.card-container .card2 {
+    background-color:white;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.card-container .card2 svg {
+    padding-top: 3rem;
+    padding-left: 8rem;
+}
+
+.card-container .card2 h1 {
+    font-size: 18px;
+    padding: 35px 35px;
+
+}
+.card-container .card3 {
+    background-color:white;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.card-container .card3 svg {
+    padding-top: 3rem;
+    padding-left: 8rem;
+}
+
+.card-container .card3 h1 {
+    font-size: 18px;
+    padding: 35px 35px;
+
+}
+
+.card-container svg {
+    font-size: 30px;
+    
+}
+
+#about3 .card-button {
+    margin-top: 15px;
+    margin-left: 40rem;
+}
+
+section#about4 {
+    background-color: rgb(53, 6, 53);
+}
+#about4 h1 {
+    text-align: center;
+}
+
+#about4 .world {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#about4 .world h1 {
+     font-size: 40px;
+     font-weight: bold;
+     color: white;
+     padding-bottom: 15px;
+}
+
+#about4 .world .max-button {
+    width: 238px;
+    height: 37px;
+    border: none;
+    outline: none;
+    background-color:white;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+
+/* styling footer of home5 */
+#about4 .footer-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+}
+
+#about4 .footer-container h2 {
+    color: white;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#about4 .footer-container ul li {
+    list-style: none;
+    line-height: 180%;
+}
+
+#about4 .footer-container ul li a {
+    text-decoration: none;
+    color: white;
+    opacity: .7;
+}
+
+.footer-icons .footer-links1 li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.address p {
+    color: white;
+    padding-top: 10px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 8rem;
+    background-color: white;
+}
+
+.navbar .logo {
+    font-size: 14;
+    font-weight: bold;
+    
+}
+
+
+
+nav ul li {
+    display: inline-block;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.max-rider {
+    width: 138px;
+    height: 37px;
+    border: none;
+    outline: none;
+    background-color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+
+/* styling contact1 section */
+#contactNav {
+    margin-top: 3rem;
+}
+
+section#contact1 {
+    background-image: url(./Images/about1-image.jpg);
+    height: 50vh;
+}
+
+#contact1 .contact {
+    text-align: center;
+    padding: 15px 0px;
+}
+
+#contact1 .contact-page {
+    text-align: center;
+    color: white;
+}
+
+.contact-page h1 {
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+/* styling contact2 section */
+section#contact2 {
+    background-color: beige;
+    height: 50vh;
+}
+
+.general-card {
+    display: flex;
+    justify-content:space-evenly;
+    padding: 15px 6rem;
+}
+
+.general-card .card {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.card #mail {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgb(122, 122, 13);
+    border: none;
+    outline: none;
+    margin-left: 6.5rem;
+    margin-top: 3rem;
+
+}
+.card #call {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgb(122, 122, 13);
+    border: none;
+    outline: none;
+    margin-left: 6.5rem;
+    margin-top: 3rem;
+
+}
+.card .flag {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgb(122, 122, 13);
+    border: none;
+    outline: none;
+    margin-left: 6.5rem;
+    margin-top: 3rem;
+
+}
+
+.card h1 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+}
+
+.card p {
+    text-align: center;
+}
+
+
+/* Styling contact3 section */
+
+
+
+.field {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    padding: 10px 9rem;
+    gap: 30px;
+    background-color: beige;
+
+}
+
+form input {
+    display: flex;
+    flex: 1;
+    align-self: stretch;
+    background-color: white;
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+    font-size: 18px;
+    color: #555;
+    width: 100%;
+    height: 80px;
+}
+
+.user svg {
+    position: relative;
+    top: 3rem;
+    padding-left: 10px;
+}
