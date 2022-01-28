@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript task</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.25.0/axios.js"></script>
+    </head>
+<body>
+    <h1>List From the API</h1>
+    
+        <div id="data"></div>
+    
+    <h4 id="loading">Loading, please Wait...</h4>
+
+    
+
+
+
+    <script>
+        const loader = document.getElementById('loading');
+        loader.style.display = 'block';
+        let string = `<table border="1" align="center">
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>EMAIL</th>
+            <th>PHONE NUMBER</th>
+        </tr>`
+
+        const fetchData = async() =>{
+            
+            let data = null
+            const url = "https://jsonplaceholder.typicode.com/users";
+            
+            const result = await axios.get(url)
+
+            data = result.data
+            console.log(data)
+
+            data.map(el =>{
+                string += `
+
+                <tr>
+                    <td>${el.id}</td>
+                    <td>${el.name}</td>
+                    <td>${el.email}</td>
+                    <td>${el.phone}</td>
+                </tr>
+                `
+            })
+
+            document.getElementById('data').innerHTML = string;
+            setTimeout(()=>{
+                loader.style.display = 'none';
+            }, 2000)
+
+        }
+
+        fetchData()
+    </script>
+</body>
+</html>
