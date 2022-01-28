@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .btn, h2{
+      text-align: center;
+    }
+    ul li {
+      margin-bottom: 30px;
+      float: left;
+      margin-right:50px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="demo2">
+    <h2>The XMLHttpRequest Object</h2>
+    <div class="btn">
+      <button class="btn" type="button" onclick="loadDoc1()">View JSON Object</button>
+    </div>
+
+  </div> <br>
+  <div id="demo">
+    <h2>Display User Data</h2>
+    <div class="btn">
+      <button class="btn" type="button" onclick="loadDoc()">View JSON list</button>
+    </div>
+
+  </div>
+
+
+<script>
+   let content = '';
+function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+ 
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+
+      const oldData = this.responseText
+      const datas = JSON.parse(oldData);
+      const num = datas.length;
+      content += '<ul>';
+      for(let i = 0;i< num ;i++){
+          content += '<li>'+ "<b>ID :</b> " +datas[i].id + '<br>' +  "<b>Name :</b> " + datas[i].name + '<br>' + "<b>Username :</b> " + datas[i].username + '<br>' + "<b>Address Street :</b> " + datas[i].address.street+ '<br>' 
+            + "<b>Suite :</b> "+ datas[i].address.suite + '<br>' + "<b>City :</b> " + datas[i].address.city + '<br>' + "<b>Zipcode :</b> " + datas[i].address.zipcode + '<br>' + "<b>Latitude :</b> " + datas[i].address.geo.lat + '<br>'
+            + "<b>Longitude :</b> " + datas[i].address.geo.lng + '<br>' + "<b>Phone Number :</b> " + datas[i].phone+ '<br>' + "<b>Website :</b> " + datas[i].website + '<br>' + "<b>Company Name :</b> " + datas[i].company.name 
+           + '<br>' + "<b>Company catchphrase :</b> " + datas[i].company.catchPhrase + '<br>'+ "<b>Company bs:</b> "  + datas[i].company.bs + ' </li>' ;
+      }
+      content+= '</ul>';
+      document.getElementById("demo").innerHTML = content;
+   
+    }
+  };
+  xhttp.open("GET", "https://jsonplaceholder.typicode.com/users");
+  xhttp.send();
+ 
+ }
+ function loadDoc1() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo2").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "https://jsonplaceholder.typicode.com/users");
+  xhttp.send();
+}
+</script>
+
+</body>
+</html>
