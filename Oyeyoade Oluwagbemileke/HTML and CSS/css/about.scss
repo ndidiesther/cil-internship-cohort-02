@@ -37,6 +37,7 @@ ul {
 
         img {
             place-content: flex-start;
+            margin-top: 10px;
         }
 
         ul.pri-nav-links {
@@ -236,7 +237,7 @@ section.services {
 .footer {
     background: var(--primary-color);
     color: white;
-    height: 540px;
+    height: 560px;
 
     .footer-banner {
         padding-top: 20px;
@@ -274,9 +275,7 @@ section.services {
             font-size: 1.2em;
         }
 
-        // .footer-right-col{
 
-        // }
     }
 
     a {
@@ -285,6 +284,16 @@ section.services {
 
     a {
         text-decoration: none;
+    }
+
+    .social-media-icons{
+        display: flex;
+
+        img{
+            margin-right: 16px;
+            height: 24px;
+            width: 24px;
+        }
     }
 
     .floating-chat {

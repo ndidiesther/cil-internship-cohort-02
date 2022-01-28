@@ -36,6 +36,7 @@ ul{
         place-content: space-between;
         img{
             place-content: flex-start;
+            margin-top: 10px;
         }
         
         ul.pri-nav-links{
@@ -149,68 +150,131 @@ section.hot-links{
     // height: 400px;
 }
 
-section.message-cta{
-    height: 640px;
+section.message-cta {
+    height: 800px;
     width: 100%;
     background: whitesmoke;
-    h2{
+
+    h2 {
         padding-top: 5%;
         font-weight: bold;
         padding-bottom: 2%;
         font-size: 2.5em;
         color: var(--primary-color);
         text-align: center;
+
+        span{
+            color: var(--secondary-color);
+        }
     }
-    .message-form{
+
+    .message-form {
         margin-left: 5%;
         margin-right: 5%;
 
-        input, textarea{
+        input,
+        textarea {
             text-transform: uppercase;
             width: 100%;
             padding: .8em;
+            margin-right: 2px;
             margin-bottom: 1em;
             border-radius: .3em;
             border: 1px solid gray;
             box-sizing: border-box;
         }
 
-        input[type='text']{
+        input[type='text'] {
             width: 100%;
             box-sizing: border-box;
         }
 
-        .name-email{
+        img {
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+            width: 16px;
+            max-height: 100%;
+        }
+
+        .name-email {
             display: flex;
             height: 50px;
-            padding-bottom: 2%;
             place-content: space-evenly;
-            .name{
-                display: block;
-                // margin-right: 5%;
-                // width: 100%;
-                // place-content: space-between;
+            margin-bottom: 5%;
+
+            input {
+                border: none;
+                height: 100%;
             }
-            .email{
-                // width: 100%;
-                // place-content: space-between;
+
+            div {
+                padding: 1%;
+                width: 100%;
+                border-radius: 8px;
+                height: 100%;
+                background-color: white;
+                display: flex;
+                width: 100%;
+                margin-right: 2.5%;
             }
         }
-        .phone-subject{
-            place-content: space-between;
-            height: 50%;
-            padding-bottom: 2%;
+
+
+        .phone-subject {
             display: flex;
-            .phone{
+            height: 50px;
+            place-content: space-evenly;
+            margin-bottom: 5%;
 
+            input {
+                border: none;
+                height: 100%;
             }
-            .email{
 
+            div {
+                padding: 1%;
+                width: 100%;
+                border-radius: 8px;
+                height: 100%;
+                background-color: white;
+                display: flex;
+                width: 100%;
+                margin-right: 2.5%;
             }
         }
-        .message{
-            padding-bottom: 2%;
-            width: 100%; 
+
+        .message {
+            background-color: white;
+            display: flex;
+            height: 200px;
+            width: 97.5%;
+            border-radius: 5px;
+            margin-bottom: 5%;
+            padding-top: 20px;
+            padding-bottom: 0;
+
+            div{
+                padding-top: 0;
+                padding-left: 20px;
+                height: 20px;
+                background-color: white;
+            }
+            img{
+                margin-top: 13px;
+                margin-left: 5%;
+                width: 16px;
+                max-height: 100%;    
+            }
+
+            textarea {
+                text-transform: uppercase;
+                font-size: large;
+                width: 90%;
+                margin-left: 1.5%;
+                border: none;
+                box-sizing: border-box;
+            }
+    
         }
 
         input[type='submit']{
@@ -227,17 +291,13 @@ section.message-cta{
             text-align: center;
             cursor: pointer;
         }
-
     }
-
 }
-
-
 
 .footer{
     background: var(--primary-color);
     color: white;
-    height: 540px;
+    height: 560px;
 
     .footer-banner{
         padding-top: 20px;
@@ -274,9 +334,7 @@ section.message-cta{
             font-size: 1.2em;
         }
 
-        .footer-right-col{
-// 
-        }
+
     }
 
     a{
@@ -286,7 +344,17 @@ section.message-cta{
     a{
         text-decoration: none;
     }
-    
+
+    .social-media-icons{
+        display: flex;
+
+        img{
+            margin-right: 16px;
+            height: 24px;
+            width: 24px;
+        }
+    }
+
     .floating-chat{
         float: right;
         padding: 10px;

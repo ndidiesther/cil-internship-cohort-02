@@ -38,6 +38,7 @@ ul {
 
 .nav-bar nav img {
   place-content: flex-start;
+  margin-top: 10px;
 }
 
 .nav-bar nav ul.pri-nav-links {
@@ -162,7 +163,7 @@ section.hot-links .call {
 }
 
 section.message-cta {
-  height: 640px;
+  height: 800px;
   width: 100%;
   background: whitesmoke;
 }
@@ -176,15 +177,21 @@ section.message-cta h2 {
   text-align: center;
 }
 
+section.message-cta h2 span {
+  color: var(--secondary-color);
+}
+
 section.message-cta .message-form {
   margin-left: 5%;
   margin-right: 5%;
 }
 
-section.message-cta .message-form input, section.message-cta .message-form textarea {
+section.message-cta .message-form input,
+section.message-cta .message-form textarea {
   text-transform: uppercase;
   width: 100%;
   padding: .8em;
+  margin-right: 2px;
   margin-bottom: 1em;
   border-radius: .3em;
   border: 1px solid gray;
@@ -198,31 +205,102 @@ section.message-cta .message-form input[type='text'] {
           box-sizing: border-box;
 }
 
+section.message-cta .message-form img {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  width: 16px;
+  max-height: 100%;
+}
+
 section.message-cta .message-form .name-email {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 50px;
-  padding-bottom: 2%;
   place-content: space-evenly;
+  margin-bottom: 5%;
 }
 
-section.message-cta .message-form .name-email .name {
-  display: block;
+section.message-cta .message-form .name-email input {
+  border: none;
+  height: 100%;
 }
 
-section.message-cta .message-form .phone-subject {
-  place-content: space-between;
-  height: 50%;
-  padding-bottom: 2%;
+section.message-cta .message-form .name-email div {
+  padding: 1%;
+  width: 100%;
+  border-radius: 8px;
+  height: 100%;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  margin-right: 2.5%;
+}
+
+section.message-cta .message-form .phone-subject {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  place-content: space-evenly;
+  margin-bottom: 5%;
+}
+
+section.message-cta .message-form .phone-subject input {
+  border: none;
+  height: 100%;
+}
+
+section.message-cta .message-form .phone-subject div {
+  padding: 1%;
+  width: 100%;
+  border-radius: 8px;
+  height: 100%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-right: 2.5%;
 }
 
 section.message-cta .message-form .message {
-  padding-bottom: 2%;
-  width: 100%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 200px;
+  width: 97.5%;
+  border-radius: 5px;
+  margin-bottom: 5%;
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+
+section.message-cta .message-form .message div {
+  padding-top: 0;
+  padding-left: 20px;
+  height: 20px;
+  background-color: white;
+}
+
+section.message-cta .message-form .message img {
+  margin-top: 13px;
+  margin-left: 5%;
+  width: 16px;
+  max-height: 100%;
+}
+
+section.message-cta .message-form .message textarea {
+  text-transform: uppercase;
+  font-size: large;
+  width: 90%;
+  margin-left: 1.5%;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 section.message-cta .message-form input[type='submit'] {
@@ -245,7 +323,7 @@ section.message-cta .message-form input[type='submit'] {
 .footer {
   background: var(--primary-color);
   color: white;
-  height: 540px;
+  height: 560px;
 }
 
 .footer .footer-banner {
@@ -292,6 +370,18 @@ section.message-cta .message-form input[type='submit'] {
 
 .footer a {
   text-decoration: none;
+}
+
+.footer .social-media-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .social-media-icons img {
+  margin-right: 16px;
+  height: 24px;
+  width: 24px;
 }
 
 .footer .floating-chat {

@@ -39,6 +39,7 @@ ul {
 
 .nav-bar nav img {
   place-content: flex-start;
+  margin-top: 10px;
 }
 
 .nav-bar nav ul.pri-nav-links {
@@ -240,7 +241,7 @@ section.services .services-cta span {
 .footer {
   background: var(--primary-color);
   color: white;
-  height: 540px;
+  height: 560px;
 }
 
 .footer .footer-banner {
@@ -287,6 +288,18 @@ section.services .services-cta span {
 
 .footer a {
   text-decoration: none;
+}
+
+.footer .social-media-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .social-media-icons img {
+  margin-right: 16px;
+  height: 24px;
+  width: 24px;
 }
 
 .footer .floating-chat {
