@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Khula', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.img-container {
+    width: 38%; 
+    height: 100%;
+}
+
+p {
+    line-height: 1.4;
+}
+
+a {
+    color: #fff
+}
+
+/*  general layout styles */
+.container {
+    height: 90vh;
+    position: relative;
+    padding: 20px 100px;
+    margin-top: 87px;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.sb {
+    justify-content: space-between;
+}
+
+.c {
+    justify-content: center;
+}
+
+.carousel {
+    background: url("./images/annie-spratt-QckxruozjRg-unsplash.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.carousel > div{
+    z-index: 2;
+    color: #fff
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.sb {
+    justify-content: space-between;
+}
+
+.c {
+    justify-content: center;
+}
+
+/* element styles */
+.nav {
+    padding: 20px 100px;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    background: white;
+    width: 100%;
+    left: -100px;
+    justify-content: space-around;
+    box-shadow: 5px 5px 50px -30px;
+}  
+
+
+.nav-links {
+    width: 400px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--gray)
+}
+
+.nav-links a:hover{
+    color: black
+}
+
+.btn {
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    padding: 15px 30px
+}
+
+.dark {
+    color: white;
+    background: black;
+}
+
+.carousel::before {
+    content: "";
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.692);
+}
+
+.carousel h1{
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.focus p {
+    font-size: 16px;
+}
+
+.focus {
+    height: 100vh;
+}
+
+.services {
+    background: rgba(122, 202, 255, 0.096);
+    text-align: center;
+    height: 100vh;
+}
+
+.services h2 {
+    font-size: 50px;
+    margin: 0 10px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.card {
+    background: #fff;
+    border-radius: 5px;
+    padding: 8.5%;
+    cursor: pointer;
+}
+
+.view-more-btn {
+    background:rgb(15, 159, 255);
+    margin-top: 60px;
+    border: none;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 5px;
+}
+
+.blue {
+    color :rgb(15, 159, 255);
+}
+
+.services svg {
+    font-size: 40px;
+}
+
+.footer {
+    background: #2b2d42;
+    text-align: center  ;
+    color: #fff;
+}
+
+.footer > h1 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-top: 50px;
+}
+
+.footer-nav {
+    align-items: flex-start;
+    text-align: left;
+}
+
+.footer > .btn {
+    margin-bottom: 70px;
+}
+
+.footer-nav > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.footer a:hover {
+    color: var(--gray)
+}
+
+.socials > svg {
+    margin-right: 18px;
+    cursor: pointer;
+}
+
+.socials > svg:hover {
+    color: var(--gray);
+}
