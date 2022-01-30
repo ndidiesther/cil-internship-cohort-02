@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API call</title>
+</head>
+<body>
+   
+        <table class="table-table">
+            
+                
+            <tbody id="response">
+
+            </tbody>
+        </table>
+    </div>
+    <button onclick="request()">Request data</button>
+
+<script>
+    function request(){
+        fetch("https://jsonplaceholder.typicode.com/users")
+        .then(function(response) {
+              return response.json()
+        })
+        .then(function(response){
+        console.log(response)
+        if(response.length>0){
+            var temp ="";
+           response.forEach(u => {
+               temp += "<tr>"
+                temp += "<td>"+u.id+"</td"
+                temp += "<td>"+u.name+"</td"
+                temp += "<td>"+u.username+"</td"
+                temp += "<td>"+u.phone+"</td"
+                temp += "<td>"+u.website+"</td"
+                    temp += "<td>"+u.address+"</td"
+                        temp += "<td>"+u.company+   "<td>"+u.address+"</td"
+                            "</td"
+                
+            });
+            document.getElementById("response").innerHTML=temp;
+        }
+        })
+    }
+</script>
+</html>
