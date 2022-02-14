@@ -1,0 +1,75 @@
+body{
+  font-family: 'Work Sans', sans-serif;
+}
+*{
+  box-sizing: border-box;
+}
+.input_div {
+  padding: 20px 0px 20px 0px
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  button {
+    width: 60px;
+    height: 40px;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    background-color: #6666ff;
+    border: none;
+    border-radius: 5px;
+}
+#btn {
+  width:15%;
+}
+
+input {
+  float: left;
+  border: 2px solid #6666ff;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 10px;
+  width: 80%;  
+}
+#btn {
+  float: right;
+}
+#demo {
+  float: left;
+  width: 100%;
+  padding-top: 10px;
+}
+@media only screen and (max-width:767px) {
+  input {
+    width: 60%;
+  }
+  #btn {
+    width:30%
+  }
+}
+@media only screen and (max-width:500px) {
+  td, th {
+    font-size: 14px;
+  }
+  button {
+    width: fit-content;
+    height:30px;
+  }
+  #btn {
+    height: 40px;
+  }
+
+}

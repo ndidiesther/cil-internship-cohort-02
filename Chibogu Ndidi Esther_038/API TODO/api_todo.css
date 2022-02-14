@@ -1,0 +1,55 @@
+body{
+    font-family: 'Work Sans', sans-serif;
+  }
+  *{
+    box-sizing: border-box;
+  }
+  
+  table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    button {
+      width: 60px;
+      height: 40px;
+      font-size: 1em;
+      color: white;
+      text-align: center;
+      background-color: #6666ff;
+      border: none;
+      border-radius: 5px;
+  }
+  #btn {
+    width:15%;
+  }
+  
+  input {
+    /* border: none; */
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    width: 80%;
+    
+  }
+  .container, h3 {
+      text-align: center;
+  }
+  @media only screen and (max-width:767px) {
+    input {
+      width: 60%;
+    }
+    #btn {
+      width:30%
+    }
+  }
