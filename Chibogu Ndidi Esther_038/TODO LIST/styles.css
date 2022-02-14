@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button {
+    width: 60px;
+    height: 40px;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    background-color: #e74645;
+    border: none;
+    border-radius: 5px;
+}
+
+.list-container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #6666ff;
+    min-height: 55vh;
+    border-radius: 5px;
+    padding: 8%;
+
+}
+
+.list-container h3 {
+    padding: 10px 0px 0px 0px;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.input-container {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.input-container input {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    width: 80%;
+    
+}
+
+.input-container button {
+    background-color: red;
+    width:15%;
+}
+
+.task-item-container {
+    padding: 10px;
+    width: 95%;
+    display: flex;
+}
+.task-item-container button {
+    background-color: #cccc00;
+    color:black;
+}
+.task-item-container .task-item {
+    flex: 1;
+    color: white;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+.list-container > div {
+    justify-content: center;
+    background-color: #000080; 
+    padding:40px;
+}
+@media only screen and (max-width: 767px){
+    .list-container {
+        width: 90%;
+        margin: 0;
+        padding:40px;
+        padding-top:10%;
+   }
+   .input-container input {
+        width: 90%;
+    }
+    .input-container button {
+        width:30%;
+        font-size:15px;
+    }
+    .list-container > div {
+        padding:5px;
+    }
+    .task-item-container {
+        width: 100%;
+    }
+    
+}
+@media only screen and (max-width: 500px) {
+    .list-container {
+        min-height: 80vh;
+        padding:15px;
+        padding-top:20%;
+    }
+    .input-container button {
+        width:50%;
+    }
+
+}
+@media only screen and (max-width: 360px) {
+    .list-container {
+        min-height: 80vh;
+        padding:15px;
+        padding-top:12%;
+    }
+}

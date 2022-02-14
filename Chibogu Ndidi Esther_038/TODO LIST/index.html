@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Commissioner">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <title>To-do List</title>
+</head>
+
+<body>
+    <div class="list-container">
+        <div>
+            <h3>Todo List</h3>
+            <div class="input-container">
+                <input type="text" placeholder="New Task" id="newTask">
+                <button onclick="addTask()" type="submit">Add Task</button>
+            </div>
+            <div id="task_board"  class="task-board"></div>
+        </div>
+    </div>
+    <script src="todo.js"></script>
+</body>
+
+</html>
