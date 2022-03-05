@@ -1,0 +1,9 @@
+# Breakdown the following RFC 1918 IPv4 address range into exactly 4 subnetwork with no address left over
+
+---
+
+## 10.10.10.0 =  00001010.00001010.00001010.00000000
+
+## 192.168.0.0 = 11000000.10101000.00000000.00000000
+
+## 172.168.1.0 = 10101100.10101000.00000001.00000000

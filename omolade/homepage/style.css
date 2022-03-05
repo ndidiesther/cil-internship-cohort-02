@@ -1,0 +1,223 @@
+/* general style */
+:root {
+    --gray: rgb(90, 90, 90);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Khula', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    line-height: 1.4;
+}
+
+/*  general layout styles */
+.container {
+    height: 90vh;
+    position: relative;
+    padding: 20px 100px;
+    margin-top: 87px;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.sb {
+    justify-content: space-between;
+}
+
+.c {
+    justify-content: center;
+}
+
+/* element styles */
+.nav {
+    padding: 20px 100px;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    background: white;
+    width: 100%;
+    left: -100px;
+    justify-content: space-around;
+    box-shadow: 5px 5px 50px -30px;
+}
+
+.nav-links {
+    width: 400px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--gray)
+}
+
+.nav-links a:hover{
+    color: black
+}
+
+.btn {
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    padding: 15px 30px
+}
+
+.dark {
+    color: white;
+    background: black;
+}
+
+.carousel {
+    background-image: url("./images/bikes-and-cars.png");
+    background-position: -60px -100px;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.carousel h1 {
+    z-index: 1;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.carousel::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.692);
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.img-container {
+    width: 46%; 
+    height: 100%;
+}
+
+.introduction p {
+    color: var(--gray)
+}
+
+.decorate-link {
+    text-decoration: underline;
+    color: #000;
+}
+
+.decorate-link:hover {
+    text-decoration: none;
+}
+
+
+.fd-column {
+    flex-direction: column;
+}
+
+.metrics {
+    background: #fffbf7;
+}
+.metrics h2 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.metrics > div {
+    width: 90%;
+    text-align: center;
+}
+
+.metrics h3 {
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: -10px;
+}
+
+.driver-application img {
+    width: 95%;
+}
+
+.driver-application {
+    height: 100vh;
+}
+
+.driver-application  p {
+    color: var(--gray)
+}
+
+
+.icon {
+    color: black !important;
+}
+
+.pioneering {
+    height: 100vh;
+}
+
+.pioneering p {
+    color: var(--gray);
+}
+
+.footer {
+    background: #2b2d42;
+    text-align: center  ;
+    color: #fff;
+}
+
+.footer > h1 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-top: 50px;
+}
+
+.footer-nav {
+    align-items: flex-start;
+    text-align: left;
+}
+
+.footer > .btn {
+    margin-bottom: 70px;
+}
+
+.footer-nav > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.footer a:hover {
+    color: var(--gray)
+}
+
+.socials > svg {
+    margin-right: 18px;
+    cursor: pointer;
+}
+
+.socials > svg:hover {
+    color: var(--gray);
+}

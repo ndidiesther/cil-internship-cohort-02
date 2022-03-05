@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JSON server</title>
+
+</head>
+<body>
+
+<h3>List of books</h3>
+
+<div id="usersList"></div>
+
+<script type="text/javascript">
+	const url = 'http://jsonplaceholder.typicode.com/users';
+	const usersList = document.querySelector("#usersList");
+
+	fetch(url)
+	  .then(response => response.json())
+	  .then(json => {
+	    
+	    json.forEach(user => {
+
+	 		let h3 = document.createElement('h3');
+	 		h3.innerText = user.name;
+	 		usersList.appendChild(h3);
+
+	 		let userDetails = `
+	 			<ul> 
+	 				<li> ID: ${user.id}</li> 
+	 				<li> username: ${user.username}</li> 
+	 				<li> email: ${user.email}</li> 
+	 				<li> username: ${user.username}</li> 
+	 				<li>Address:
+	 					<ul>
+	 						<li>Street: ${user.address.street}</li>
+	 						<li>City: ${user.address.city}</li>
+	 						<li>Suite: ${user.address.suite}</li>
+	 						<li>Zip code: ${user.address.zipcode}</li>
+	 						<li>Lat: ${user.address.geo.lat}</li>
+	 						<li>Long: ${user.address.geo.lng}</li>
+	 					</ul>
+	 				</li>	
+	 				<li>Phone: ${user.phone}</li>
+	 				<li>Website: ${user.website}</li>
+	 				<li>Company:
+	 					<ul>
+	 						<li>Name: ${user.company.name}</li>
+	 						<li>Catchphrase: ${user.company.catchPhrase}</li>
+	 						<li>BS: ${user.company.bs}</li>
+	 					</ul>
+	 				</li>	
+
+	 			</ul>	
+	 		`;
+
+	 		h3.insertAdjacentHTML('afterend', userDetails);
+
+	 	});
+
+	});
+
+</script>		
+</body>
+</html>
